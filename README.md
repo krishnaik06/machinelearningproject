@@ -40,3 +40,14 @@ To Check remote url
 ```
 git remote -v
 ```
+
+To Check Branch
+```
+git branch
+```
+
+To Set up CI/CD pipeline in heroku we need 3 information 
+
+1. Heroku_Email=krishnaik06@gmail.com
+2. Heroku_API_Key=454e3899-0522-43e0-8d0d-0fd83eda40ce
+3. Heroku_APP_NAME=air-foil
