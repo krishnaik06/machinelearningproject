@@ -76,3 +76,11 @@ Stop Docker container
 ```
 docker stop <container-id>
 ```
+Set up setup.py file
+```
+python setup.py install
+```
+Or
+```
+pip install -r requirements.txt
+```

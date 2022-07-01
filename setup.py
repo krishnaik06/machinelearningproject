@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 from typing import List
 
 def get_requirements_list()->List[str]:
@@ -9,16 +9,16 @@ def get_requirements_list()->List[str]:
     Returns: List of requirements.
     """
     with open("requirements.txt") as f:
-        return f.read().splitlines()
+        return f.readlines().remove("-e .")
 
 
 setup(
 name="housing-prediction",
-version="0.1",
+version="0.2",
 description="Housing price prediction",
 author="KRish",
 author_email="krishnaik06@gmail.com",
-packages=["housing"],
+packages=find_packages(),
 install_requires=get_requirements_list()
 )
 
