@@ -51,3 +51,28 @@ To Set up CI/CD pipeline in heroku we need 3 information
 1. Heroku_Email=krishnaik06@gmail.com
 2. Heroku_API_Key=454e3899-0522-43e0-8d0d-0fd83eda40ce
 3. Heroku_APP_NAME=air-foil
+
+BUILD DOCKER Images
+
+```
+docker build -t <image_name>:<tagname> .
+```
+> Note:Image name for docker must be lowercase
+
+Check image that got created, To list docker images
+```
+docker images
+```
+
+Run Docker Images
+```
+docker run -p 5000:5000 -e PORT=5000 fe6ef5c7a427
+```
+To check running container
+```
+docker ps
+```
+Stop Docker container
+```
+docker stop <container-id>
+```
